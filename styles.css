@@ -1,0 +1,435 @@
+/* general */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    opacity: 0.9;
+}
+
+h1 {
+    font-size: 3.125rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.85rem;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, 
+.footer {
+    background: white;
+}
+
+.content {
+    flex: 1;
+    overflow: auto;
+    background: white;
+}
+
+/* navigation */
+
+nav {
+    height: 4.3125rem;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+    text-decoration: underline;
+    position: fixed;
+    right: 0rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    padding-top: 1.625rem;
+    padding-bottom: 1.625rem;
+    margin: 0;
+  }
+
+ul li {
+    padding-left: 1.875rem;
+}
+
+nav img {
+    padding-left: 1.875rem;
+    height: 4.375rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+    nav {
+        height: 60px;
+    }
+
+    nav img {
+        padding-left: 10px;
+        height: 60px;
+    }
+
+    ul {
+        padding-top: 5px;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+}
+
+/* banner */
+
+#banner {
+    position: relative;
+    height: 55rem;
+    background: url("resources/miguel-a-amutio-QDv-uBc-poY-unsplash.jpg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+#text h2 {
+    color:white;
+    font-weight: 400;
+    padding-top: 250px;
+    margin: 0px;
+}
+
+#text h3 {
+    color: lightgray;
+    font-weight: 300;
+    margin: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;  
+}
+
+/* activities */
+
+#activities {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#text2 {
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;   
+}
+
+#text2 h3 {
+    font-weight: 300;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.row h4 {
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    font-weight: 100;
+    margin-bottom: 1.875rem;
+}
+
+.row img {
+    padding: 0;
+    margin-right: 1.875rem;
+    margin-left: 1.875rem;
+}
+
+/* events */
+
+#events {
+    position: relative;
+    background: #50e5ff4f center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#text3 {
+    background-color: #50e5ff00;
+    display: inline-block;
+    position: relative;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;  
+}
+
+#text3 h3 {
+    font-weight: 300;
+}
+
+
+.box {
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .box {
+        display: inline-block;
+        text-align: center;
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* training zone */
+
+#trainingZone {
+    position: relative;
+    height: 55rem;
+    background: url("resources/fitsum-admasu-oGv9xIl7DkY-unsplash.jpg") center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#info {
+    position: relative;
+    height: 12.5rem;
+    background-size: cover;
+    text-align: center;
+}
+
+/* contact */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+.background {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 0 1 43.75rem;
+    margin: auto;
+    padding: 10px;
+}
+  
+.screen {
+    position: relative;
+    background: #d0f9ff;
+    border-radius: 0.9375rem;
+}
+
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+.screen-body {
+    display: flex;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: gray;
+    font-size: 26px;
+}
+
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #ea1d1d94;
+}
+
+.app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+.app-form-group.message {
+    margin-top: 40px;
+}
+
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: gray;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+    color:gray;
+}
+
+.app-form-control:focus {
+    border-bottom-color: #ddd;
+}
+
+.app-form-button {
+    background: none;
+    border: none;
+    color: gray;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.app-form-button:hover {
+    color: black;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #ffa4bd;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.credits-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+  
+@media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+}
+
+/* footer */
+
+footer {
+    height: 50px;
+}
+
+footer h5 {
+    padding-left: 20px;
+    margin-top: 15px;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        height: 60px;
+    }
+}
